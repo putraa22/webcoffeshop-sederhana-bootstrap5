@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="./asset/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link Font Awesome -->
+    <link rel="stylesheet" href="./asset/fontawesom/css/all.min.css">
+    <!-- css main -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <title>Coffe Shop</title>
+  </head>
+  <body id="home">
+  <!-- Navbar Work -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow" style="background-color: #f2f2f2;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./asset/img/logo-removebg-preview.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false" >Product
+            </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Green Coffe</a></li>
+            <li><a class="dropdown-item" href="#">Black Coffe</a></li>
+            <li><a class="dropdown-item" href="#">Huzelnuts Caramel</a></li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services.html">Services</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Slider Work Start -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./asset/img/slider1.jpg" class="d-block w-100" alt="Slide1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./asset/img/slider2.jpg" class="d-block w-100" alt="Slide2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./asset/img/slider3.jpg" class="d-block w-100" alt="Slide3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Slider Work End -->
+
+  <!-- Product Card Start-->
+  <div class="container">
+    <div class="row mt-5 text-center">
+      <h1>PRODUCTS</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 my-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./asset/img/product1.jpg" class="card-img-top" alt="Product1">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, incidunt.</p>
+          </div>
+          <div class="text-center mb-3">
+            <button type="button" class="btn btn-info w-60 mb-1 text-light"  data-bs-toggle="modal" data-bs-target="#exampleModal">Detail</button>
+            <button type="button" class="btn btn-primary w-75">Rp.25.000</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./asset/img/product2.jpg" alt="Product2">
+          <div class="card-body">
+            <h5 class="card-title">Card Title2</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facilis.</p>
+          </div>
+          <div class="text-center mb-3">
+            <button type="button" class="btn btn-info w-60 mb-1 text-light"  data-bs-toggle="modal" data-bs-target="#exampleModa2">Detail</button>
+            <button type="button" class="btn btn-primary w-75">Rp.20.000</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./asset/img/product3.jpg" alt="Product3">
+          <div class="card-body">
+            <h5 class="card-title">Card Title2</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facilis.</p>
+          </div>
+          <div class="text-center mb-3">
+            <button type="button" class="btn btn-info w-60 mb-1 text-light"  data-bs-toggle="modal" data-bs-target="#exampleModa3">Detail</button>
+            <button type="button" class="btn btn-primary w-75">Rp.23.000</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./asset/img/product4.jpg" alt="Product4">
+          <div class="card-body">
+            <h5 class="card-title">Card Title2</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, facilis.</p>
+          </div>
+          <div class="text-center mb-3">
+            <button type="button" class="btn btn-info w-60 mb-1 text-light"  data-bs-toggle="modal" data-bs-target="#exampleModa4">Detail</button>
+            <button type="button" class="btn btn-primary w-75">Rp.24.000</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Product Card End -->
+
+  <!-- Modal start -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias esse cum fugiat, debitis minima maiores hic blanditiis repellendus reprehenderit fugit?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias esse cum fugiat, debitis minima maiores hic blanditiis repellendus reprehenderit fugit?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias esse cum fugiat, debitis minima maiores hic blanditiis repellendus reprehenderit fugit?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabe4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias esse cum fugiat, debitis minima maiores hic blanditiis repellendus reprehenderit fugit?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End -->
+   
+  <!-- Team Section Work Start -->
+  <section style="background-color: rgb(221, 220, 220)">
+    <div class="container">
+      <div class="row text-center pt-5">
+        <h1>OUR TEAM</h1>
+      </div>
+      <div class="row p-5 justify-content-between">
+        <div class="col">
+          <div class="card">
+            <img src="./asset/img/team-1.jpg" class="card-img-top" alt="Team">
+            <div class="car-body h-100">
+              <h5 class="card-title p-3">Card Title</h5>
+              <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dignissimos numquam voluptatem maiores?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./asset/img/team-2.jpg" class="card-img-top" alt="Team2">
+            <div class="car-body h-100">
+              <h5 class="card-title p-3">Card Title</h5>
+              <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dignissimos numquam voluptatem maiores?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./asset/img/team-3.jpg" class="card-img-top" alt="Team3">
+            <div class="car-body h-100">
+              <h5 class="card-title p-3">Card Title</h5>
+              <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dignissimos numquam voluptatem maiores?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./asset/img/team-4.jpg" class="card-img-top" alt="Team4">
+            <div class="car-body h-100">
+              <h5 class="card-title p-3">Card Title</h5>
+              <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dignissimos numquam voluptatem maiores?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team Section Work End -->
+
+<!-- Footer Work Start -->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-dark">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i  class="fab fa-facebook"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">Company Name </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="./about.html" class="text-reset">About</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact Us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Services</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 CoffeT.OD:
+    <a class="text-reset fw-bold" href="#">Coffe T.OD</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- Footer Work End -->
+
+   <!-- Javascript -->
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
